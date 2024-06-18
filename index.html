@@ -7,6 +7,74 @@
     <title>CHC Construction &mdash; We construct with Elegance and Class 💯</title>
     <link rel="shortcut icon" href="img/CHC-websitelogo-new.jpg" type="image/x-icon" />
 
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .header__nav {
+        background-color: #f1ecec;
+        overflow: hidden;
+      }
+  
+      .header__nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+  
+      .header__nav-item {
+        text-align: center;
+        padding: 14px 16px;
+      }
+  
+      .header__nav-link {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+  
+      .header__nav-link:hover {
+        background-color: #ddd;
+        color: black;
+      }
+  
+      .header__nav-link--active {
+        background-color: #69c2f6;
+      }
+  
+      .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+      }
+  
+      .menu-toggle span {
+        font-size: 18px;
+      }
+  
+      @media (min-width: 600px) {
+        .header__nav-list {
+          flex-direction: row;
+          display: flex;
+        }
+  
+        .menu-toggle {
+          display: none;
+        }
+      }
+    </style>
+
     <!-- Development CSS -->
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
 
@@ -21,29 +89,30 @@
         </div>
 
         <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="img/CHC-websitelogo-new.jpg" class="header__nav-link header__nav-link--active"
-                >Home</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">About Us</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Services</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Projects</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Gallery</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="menu-toggle">
+      <span>&#9776; Menu</span>
+    </div>
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a href="img/CHC-websitelogo-new.jpg" class="header__nav-link header__nav-link--active">Home</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">About Us</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Services</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Projects</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Gallery</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
 
         <div class="header__btn-box">
           <a href="requestestimate.html" class="btn btn--white">Request An Estimate</a>
@@ -241,14 +310,18 @@
             <div class="mission__content">
               <h4 class="mission__title u-margin-bottom-small">Vision</h4>
               <p class="paragraph">
-                We aim to establish ourselves as a leading residential home construction company in the Kansas City area, known for delivering durable and high-quality homes. Utilizing top-notch technology and offering competitive pricing, we strive to exceed expectations with every project.
+                Our Vision is to be one of the prestigious Building Construction
+                organizations providing lasting edifice for our clients all over
+                Africa, with world-class technology at a competitive cost.
               </p>
             </div>
 
             <div class="mission__content">
               <h4 class="mission__title u-margin-bottom-small">Mission</h4>
               <p class="paragraph">
-                Our mission as an organization is to elevate standards in residential construction in the Kansas City area, ensuring unparalleled quality and service delivery that sets a new benchmark in the industry.
+                Our mission as an organization is to bridge the gap between
+                Africa and the western world in terms of quality product,
+                service delivery.
               </p>
             </div>
           </div>
@@ -436,5 +509,10 @@
       </div>
     </footer>
   </body>
-
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      const navList = document.querySelector('.header__nav-list');
+      navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
 </html>
