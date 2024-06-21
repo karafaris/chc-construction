@@ -18,12 +18,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: #ffffff;
-            color: #ffffff;
+            background-color: #f8f8f8;
         }
 
         .header__logo-box img {
-            max-height: 50px;
+            max-height: 10px; /* Reduced to 50% of original 50px */
         }
 
         .header__nav {
@@ -43,28 +42,31 @@
 
         .header__nav-link {
             text-decoration: none;
-            color: #000000;
+            color: #a5a5a5;
             padding: 10px 15px;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
 
         .header__nav-link:hover,
         .header__nav-link--active {
-            background-color: #555;
-            border-radius: 5px;
+            background-color: #d3e7f7;
+            color: #007bff;
+            border-radius: 3px;
         }
 
         .header__btn-box .btn {
-            background-color: #007bff;
-            color: white;
+            background-color: #ffffff;
+            color: #007bff;
             padding: 10px 20px;
             text-decoration: none;
+            border: 1px solid #007bff;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
 
         .header__btn-box .btn:hover {
-            background-color: #0056b3;
+            background-color: #f0f8ff;
         }
 
         .header__content {
@@ -86,7 +88,7 @@
         .centered-form form {
             max-width: 600px;
             width: 100%;
-            padding: 20px;
+            padding: 0px;
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f9f9f9;
@@ -100,8 +102,9 @@
         }
 
         .header__hero-img-box img {
-            max-width: 100%;
+            max-width: 30%;
             height: auto;
+            
         }
     </style>
 </head>
@@ -142,7 +145,7 @@
     </header>
     <div class="header__content">
         <div class="header__hero-img-box">
-            <img src="img/CHC-websitelogo-new.jpg" alt="CHC Construction Hero Image" class="header__hero-img" />
+            <img src="img/CHC-websitelogo-new.jpg" alt="CHC Construction Hero Image" class="header__hero-img max-height="50vh" />
         </div>
     </div>
 
