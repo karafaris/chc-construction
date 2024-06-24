@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request an Estimate</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .header__nav {
+        background-color: #f1ecec;
+        overflow: hidden;
+      }
+  
+      .header__nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+  
+      .header__nav-item {
+        text-align: center;
+        padding: 14px 16px;
+      }
+  
+      .header__nav-link {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+  
+      .header__nav-link:hover {
+        background-color: #ddd;
+        color: black;
+      }
+  
+      .header__nav-link--active {
+        background-color: #69c2f6;
+      }
+  
+      .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+      }
+  
+      .menu-toggle span {
+        font-size: 18px;
+      }
+  
+      @media (min-width: 600px) {
+        .header__nav-list {
+          flex-direction: row;
+          display: flex;
+        }
+  
+        .menu-toggle {
+          display: none;
+        }
+      }
+      .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      .form-container h2 {
+        text-align: center;
+      }
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container label {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .form-container input,
+      .form-container textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-container button {
+        padding: 10px;
+        font-size: 18px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-container button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <!-- Deployable CSS -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__menu-bar">
+      <div class="header__logo-box">
+          <href="img/CHC-websitelogo-new.jpg">
+      </div>
+
+      <nav class="header__nav">
+  <div class="menu-toggle">
+    <span>&#9776; Menu</span>
+  </div>
+  <ul class="header__nav-list">
+    <li class="header__nav-item">
+      <a href="img/CHC-websitelogo-new.jpg" class="header__nav-link header__nav-link--active">Home</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">About Us</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Services</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Projects</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Gallery</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="header__btn-box">
+        <a href="requestestimate.html" class="btn btn--white">Request An Estimate</a>
+       
+      </div>
+    </div>
+    <div class="header__content u-margin-bottom-big">
+      <div class="header__hero-img-box">
+        <img
+          src="img/CHC-websitelogo-new.jpg"
+          alt="CHC Construction Hero Image"
+          srcset="img/CHC-websitelogo-new.jpg" 1x, "img/hero-img-2x.png" 2x,
+          class="header__hero-img"
+        />
+      </div>
+  <body>
+    <div class="form-container">
+      <h2>Request an Estimate</h2>
+      <form action="sendemail.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
