@@ -108,8 +108,58 @@
       .form-container button:hover {
         background-color: #555;
       }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .footer__row-1,
+        .footer__row-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer__box {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer__title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer__list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer__item {
+            margin-bottom: 10px;
+        }
+        .footer__link {
+            color: white;
+            text-decoration: none;
+        }
+        .footer__link:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer__social-icons-box {
+            display: flex;
+            justify-content: center;
+        }
+        .footer__social-link {
+            margin: 0 10px;
+        }
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
     </style>
-  </head>
+  </header>
+  <main>
   <!-- Deployable CSS -->
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -126,7 +176,7 @@
   </div>
   <ul class="header__nav-list">
     <li class="header__nav-item">
-      <a href="img/CHC-websitelogo-new.jpg" class="header__nav-link header__nav-link--active">Home</a>
+      <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
     </li>
     <li class="header__nav-item">
       <a href="#" class="header__nav-link">About Us</a>
@@ -147,7 +197,7 @@
 </nav>
 
       <div class="header__btn-box">
-        <a href="requestestimate.html" class="btn btn--white">Request An Estimate</a>
+        <a href="requestestimate2.html" class="btn btn--white">Request An Estimate</a>
        
       </div>
     </div>
@@ -173,7 +223,76 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         <button type="submit">Submit</button>
-      </form>
-    </div>
+         </form>
+        </div>
+        <div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="footer__row-1">
+            <div class="footer__box">
+                <h4 class="footer__title">Company</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Estates</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Projects</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Gallery</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h4 class="footer__title">Support</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Get Help</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">FAQs</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Terms of Operation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__row-2 u-margin-top-small">
+            <p class="copyright">&copy; 2024 Kara Faris</p>
+            <div class="footer__social-icons-box">
+                <a href="#" class="footer__social-link">
+                    <svg class="social-icon">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <svg class="social-icon">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <svg class="social-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
   </body>
+  
 </html>
