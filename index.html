@@ -1,137 +1,142 @@
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
- .header__nav {
-    background-color: #f1ecec;
-    overflow: hidden;
-  }
-
- .header__nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-
- .header__nav-item {
-    text-align: center;
-    padding: 14px 16px;
-  }
-
- .header__nav-link {
-    text-decoration: none;
-    color: white;
-    display: block;
-  }
-
- .header__nav-link:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
- .header__nav-link--active {
-    background-color: #69c2f6;
-  }
-
- .menu-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 16px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-  }
-
- .menu-toggle span {
-    font-size: 18px;
-  }
-
- .header__btn-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 16px;
-  }
-
-  @media (min-width: 600px) {
-   .header__nav-list {
-      flex-direction: row;
-      display: flex;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-   .menu-toggle {
+    .header__nav {
+      background-color: #f1ecec;
+      overflow: hidden;
+    }
+
+    .header__nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
       display: none;
     }
 
-   .header__btn-box {
-      margin-left: auto;
+    .header__nav-item {
+      text-align: center;
+      padding: 14px 16px;
     }
-  }
 
- .btn {
-    text-decoration: none;
-    color: #333;
-    background-color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+    .header__nav-link {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
 
- .btn:hover {
-    background-color: #ddd;
-  }
-</style>
+    .header__nav-link:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-<!-- Development CSS -->
-<!-- <link rel="stylesheet" href="css/style.css" /> -->
+    .header__nav-link--active {
+      background-color: #69c2f6;
+    }
 
-<!-- Deployable CSS -->
-<link rel="stylesheet" href="css/style.min.css" />
+    .menu-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+    }
+
+    .menu-toggle span {
+      font-size: 18px;
+    }
+
+    .header__btn-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+    }
+
+    @media (min-width: 600px) {
+      .header__nav-list {
+        flex-direction: row;
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .header__btn-box {
+        margin-left: auto;
+      }
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #333;
+      background-color: #fff;
+      padding: 10px 20px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+  <!-- Development CSS -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+  <!-- Deployable CSS -->
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
-<header class="header">
-  <div class="header__menu-bar">
-    <div class="header__logo-box">
-      <img src="#" alt="CHC Logo">
-    </div>
-
-    <nav class="header__nav">
-      <div class="menu-toggle">
-        <span>&#9776; Menu</span>
+  <header class="header">
+    <div class="header__menu-bar">
+      <div class="header__logo-box">
+        <img src="#" alt="CHC Logo">
       </div>
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="aboutus.html" class="header__nav-link">About Us</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="services.html" class="header__nav-link">Services</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="project.html" class="header__nav-link">Projects</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="gallery.html" class="header__nav-link">Gallery</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="contactus.html" class="header__nav-link">Contact Us</a>
-        </li>
-        <li class="header__nav-item header__btn-box">
-          <a href="requestestimate2.html" class="btn">Request An Estimate</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+
+      <nav class="header__nav">
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span>&#9776; Menu</span>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="aboutus.html" class="header__nav-link">About Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="services.html" class="header__nav-link">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="project.html" class="header__nav-link">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="gallery.html" class="header__nav-link">Gallery</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="contactus.html" class="header__nav-link">Contact Us</a>
+          </li>
+          <li class="header__nav-item header__btn-box">
+            <a href="requestestimate2.html" class="btn">Request An Estimate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
         </div>
       </div>
@@ -522,7 +527,7 @@
     </footer>
   </body>
   <script>
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
+function toggleMenu() {
       const navList = document.querySelector('.header__nav-list');
       navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
     });
