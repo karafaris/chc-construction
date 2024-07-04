@@ -212,7 +212,7 @@
     margin: 0 auto;
   }
 
-.footer {
+  .footer {
   text-align: center; /* Centers the content horizontally */
   padding: 20px;
 }
@@ -231,6 +231,20 @@
   height: 30px;
   fill: #333; /* Adjust icon color */
 }
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footer__social-icons-box {
+    margin-top: 20px; /* Increase spacing between sections on mobile */
+  }
+}
+
+
 
 
 
@@ -652,28 +666,29 @@
         </div>
   
         
-        <footer class="footer">
-          <div class="footer__copyright">
-            &copy; 2024 CHC Construction. All rights reserved.
-          </div>
-          <div class="footer__social-icons-box">
-            <a href="#" class="footer__social-link">
-              <svg class="social-icon">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="footer__social-link">
-              <svg class="social-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <a href="#" class="footer__social-link">
-              <svg class="social-icon">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </div>
-        </footer>
+<footer class="footer">
+  <div class="footer__copyright">
+    &copy; 2024 CHC Construction. All rights reserved.
+  </div>
+  <div class="footer__social-icons-box">
+    <a href="#" class="footer__social-link">
+      <svg class="social-icon">
+        <use xlink:href="img/sprite.svg#facebook"></use>
+      </svg>
+    </a>
+    <a href="#" class="footer__social-link">
+      <svg class="social-icon">
+        <use xlink:href="img/sprite.svg#instagram"></use>
+      </svg>
+    </a>
+    <a href="#" class="footer__social-link">
+      <svg class="social-icon">
+        <use xlink:href="img/sprite.svg#twitter"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+
         
     </body>
     <script>
