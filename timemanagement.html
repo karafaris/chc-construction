@@ -211,7 +211,39 @@
     display: block;
     margin: 0 auto;
   }
+
+  .footer {
+  text-align: center; /* Centers the content horizontally */
+  padding: 20px;
 }
+
+.footer__social-icons-box {
+  margin-top: 10px; /* Adjust spacing between sections */
+}
+
+.footer__social-link {
+  display: inline-block; /* Ensures each social icon is on the same line */
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  fill: #333; /* Adjust icon color */
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footer__social-icons-box {
+    margin-top: 20px; /* Increase spacing between sections on mobile */
+  }
+}
+
 
 
 
