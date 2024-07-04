@@ -35,6 +35,41 @@
       display: block;
     }
 
+    .header__banner-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add some padding for mobile devices */
+}
+
+.header__banner-img {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+@media (min-width: 600px) {
+  .header__banner-img-box {
+    padding: 20px; /* Adjust padding for larger screens */
+  }
+
+  .header__banner-img {
+    max-width: 80%; /* Adjust the image size for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__banner-img-box {
+    padding: 30px; /* Further adjust padding for even larger screens */
+  }
+
+  .header__banner-img {
+    max-width: 70%; /* Further adjust the image size for larger screens */
+  }
+}
+
+
+
+
     .header__nav-link:hover {
       background-color: #ddd;
       color: black;
@@ -152,6 +187,63 @@
     flex: 1 1 100%;
   }
 }
+
+/* Additional styling for better spacing and alignment */
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-mid {
+  margin-bottom: 2rem;
+}
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .header__logo-box {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to top */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer {
+  text-align: center; /* Centers the content horizontally */
+  padding: 20px;
+}
+
+.footer__social-icons-box {
+  margin-top: 10px; /* Adjust spacing between sections */
+}
+
+.footer__social-link {
+  display: inline-block; /* Ensures each social icon is on the same line */
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  fill: #333; /* Adjust icon color */
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footer__social-icons-box {
+    margin-top: 20px; /* Increase spacing between sections on mobile */
+  }
+}
+
   </style>
 
   <!-- Development CSS -->
