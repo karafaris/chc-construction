@@ -93,6 +93,65 @@
     .btn:hover {
       background-color: #ddd;
     }
+
+    /* Base styles for the Contact Us section */
+.contact-us {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-us__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-us__left,
+.contact-us__right {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 768px) {
+  .contact-us__container {
+    flex-wrap: nowrap;
+  }
+
+  .contact-us__left,
+  .contact-us__right {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+
+  .contact-us__img-box iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Adjust form styles */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form__col--1,
+.form__col--2 {
+  flex: 1 1 100%;
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 768px) {
+  .form__col--1 {
+    flex: 1 1 48%;
+  }
+
+  .form__col--2 {
+    flex: 1 1 100%;
+  }
+}
   </style>
 
   <!-- Development CSS -->
@@ -324,6 +383,7 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="footer">
