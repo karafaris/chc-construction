@@ -211,75 +211,79 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__row-1">
-      <div class="footer__box">
-        <h4 class="footer__title">Company</h4>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">About Us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Estates</a>
-          </li>
-          <li class="#footer__item">
-            <a href="" class="footer__link">Projects</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Gallery</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__box">
-        <h4 class="footer__title">Support</h4>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Get Help</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">FAQs</a>
-          </li>
-          <li class="#footer__item">
-            <a href="" class="footer__link">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms of Operation</a>
-          </li>
-        </ul>
-      </div>
-
-      
-
-    <div class="footer__row-2 u-margin-top-small">
-      <p class="copyright">&copy; 2024 CHC Construction</p>
-
-      <div class="footer__social-icons-box">
-        <a href="#" class="footer__social-link">
-          <svg class="social-icon">
-            <use xlink:href="img/sprite.svg#facebook"></use>
-          </svg>
-        </a>
-        <a href="#" class="footer__social-link">
-          <svg class="social-icon">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-        <a href="#" class="footer__social-link">
-          <svg class="social-icon">
-            <use xlink:href="img/sprite.svg#twitter"></use>
-          </svg>
-        </a>
-      </div>
+  <div class="footer__row-1">
+    <div class="footer__box">
+      <h4 class="footer__title">Company Information</h4>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="index.html" class="footer__link">Home</a>
+        </li>
+        <li class="footer__item">
+          <a href="aboutus.html" class="footer__link">About Us</a>
+        </li>
+        <li class="#footer__item">
+          <a href="services.html" class="footer__link">Services</a>
+        </li>
+        <li class="footer__item">
+          <a href="project.html" class="footer__link">Projects</a>
+        </li>
+        <li class="footer__item">
+          <a href="gallery.html" class="footer__link">Gallery</a>
+        </li>
+      </ul>
     </div>
-  </footer>
+
+    <div class="footer__box">
+      <h4 class="footer__title">Support</h4>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="contactus.html" class="footer__link">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a href="timemanagement.html" class="footer__link">Time Management</a>
+        </li>
+        <li class="#footer__item">
+          <a href="privacypolicy.html" class="footer__link">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a href="termsandconditions.html" class="footer__link">Terms of Operation</a>
+        </li>
+      </ul>
+    </div>
+
+    
+
+  <div class="footer__row-2 u-margin-top-small">
+    <p class="copyright">&copy; 2024 CHC Construction</p>
+
+    <div class="footer__social-icons-box">
+      <a href="#" class="footer__social-link">
+        <svg class="social-icon">
+          <use xlink:href="img/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+      <a href="#" class="footer__social-link">
+        <svg class="social-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+      <a href="#" class="footer__social-link">
+        <svg class="social-icon">
+          <use xlink:href="img/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 <script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    const navList = document.querySelector('.header__nav-list');
-    navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
-  });
+function toggleMenu() {
+  var navList = document.querySelector('.header__nav-list');
+  if (navList.style.display === "flex") {
+    navList.style.display = "none";
+  } else {
+    navList.style.display = "flex";
+  }
+}
 </script>
 </html>
