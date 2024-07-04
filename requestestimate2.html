@@ -1,189 +1,103 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request an Estimate</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('img/services-bg-img.png'); /* Corrected background-image property */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .header__nav {
-            background-color: #f1ecec;
-            overflow: hidden;
-        }
-    
-        .header__nav-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            display: none;
-        }
-    
-        .header__nav-item {
-            text-align: center;
-            padding: 14px 16px;
-        }
-    
-        .header__nav-link {
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-    
-        .header__nav-link:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    
-        .header__nav-link--active {
-            background-color: #69c2f6;
-        }
-    
-        .menu-toggle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px 16px;
-            cursor: pointer;
-            background-color: #333;
-            color: white;
-        }
-    
-        .menu-toggle span {
-            font-size: 18px;
-        }
-    
-        @media (min-width: 600px) {
-            .header__nav-list {
-            flex-direction: row;
-            display: flex;
-            }
-    
-            .menu-toggle {
-            display: none;
-            }
-        }
-        .form-container {
-  max-width: 650px; /* Increased from 5000px to 650px (30% larger) */
-  margin: 150px auto;
-  padding: 28px;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  background-color: #f9f9f9;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-.form-container h2 {
-  text-align: center;
-  font-size: 1.6rem; /* Increased from 2.8rem to 3.6rem (30% larger) */
-}
+    
 
-.form-container label {
-  margin-bottom: 18px; /* Increased from 14px to 18px (30% larger) */
-  font-weight: bold;
-  text-align: right;
-  font-size:4rem; /* Increased from 1.4rem to 1.8rem (30% larger) */
-}
+    .header__nav {
+      background-color: #f1ecec;
+      overflow: hidden;
+    }
 
-.form-container input,
-.form-container textarea {
-  margin-bottom: 36px; /* Increased from 28px to 36px (30% larger) */
-  padding: 18px; /* Increased from 14px to 18px (30% larger) */
-  font-size: 2.8rem; /* Increased from 2.2rem to 2.8rem (30% larger) */
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
+    .header__nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: column;
+    }
 
-.form-container button {
-  padding: 18px; /* Increased from 14px to 18px (30% larger) */
-  font-size: 1.8rem; /* Increased from 1.5rem to 1.8rem (30% larger) */
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-        .form-container button:hover {
-            background-color: #555;
-        }
-            .footer {
-                background-color: #333;
-                color: white;
-                padding: 20px;
-            }
-            .footer__row-1,
-            .footer__row-2 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            .footer__box {
-                flex: 1;
-                margin: 10px;
-            }
-            .footer__title {
-                font-size: 18px;
-                margin-bottom: 10px;
-            }
-            .footer__list {
-                list-style-type: none;
-                padding: 0;
-            }
-            .footer__item {
-                margin-bottom: 10px;
-            }
-            .footer__link {
-                color: rgb(90, 145, 255);
-                text-decoration: none;
-            }
-            .footer__link:hover {
-                text-decoration: underline;
-            }
-            .copyright {
-                text-align: center;
-                margin-top: 20px;
-            }
-            .footer__social-icons-box {
-                display: flex;
-                justify-content: center;
-            }
-            .footer__social-link {
-                margin: 0 10px;
-            }
-            .social-icon {
-                width: 24px;
-                height: 24px;
-                fill: white;
-     }
-     .centered-text {
-    text-align: center;
-  }
-  p {
-            background-color: #rgb;
-            padding: 10px;
-            margin-bottom: 20px; /* Adds space below the paragraph */
+    .header__nav-item {
+      text-align: center;
+      padding: 14px 16px;
+    }
 
-        }
-        a {
-            color: rgb(90, 145, 255);
-        }
-        .map-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px; /* Adds space below the iframe */
-        }
-    </style>
-</head>
-  <main>
+    .header__nav-link {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .header__nav-link:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header__nav-link--active {
+      background-color: #69c2f6;
+    }
+
+    .menu-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+    }
+
+    .menu-toggle span {
+      font-size: 18px;
+    }
+
+    .header__btn-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+    }
+
+    @media (min-width: 600px) {
+      .header__nav-list {
+        flex-direction: row;
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .header__btn-box {
+        margin-left: auto;
+      }
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #333;
+      background-color: #fff;
+      padding: 10px 20px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+  <!-- Development CSS -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
   <!-- Deployable CSS -->
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -191,38 +105,39 @@
   <header class="header">
     <div class="header__menu-bar">
       <div class="header__logo-box">
-          <href="index.html">
+        <img src="img/CHC-websitelogo-small.jpg" alt="CHC Logo">
       </div>
 
       <nav class="header__nav">
-  <div class="menu-toggle">
-    <span>&#9776; Menu</span>
-  </div>
-  <ul class="header__nav-list">
-    <li class="header__nav-item">
-      <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="aboutus.html" class="header__nav-link">About Us</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="services.html" class="header__nav-link">Services</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="project.html" class="header__nav-link">Projects</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="gallery.html" class="header__nav-link">Gallery</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="contactus.html" class="header__nav-link">Contact Us</a>
-    </li>
-  </ul>
-</nav>
-
-      <div class="header__btn-box">
-        <a href="requestestimate2.html" class="btn btn--white">Request An Estimate</a>
-       
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span>&#9776; Menu</span>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="aboutus.html" class="header__nav-link">About Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="services.html" class="header__nav-link">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="project.html" class="header__nav-link">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="gallery.html" class="header__nav-link">Gallery</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="contactus.html" class="header__nav-link">Contact Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="requestestimate2.html" class="header__nav-link header__nav-link--active">Request An Estimate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
       </div>
     </div>
     <div class="header__content u-margin-bottom-big">
