@@ -1,125 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHC Construction - Projects</title>
-    <link rel="shortcut icon" href="img/CHC-websitelogo-new.jpg" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+
+    .header__nav {
+      background-color: #f1ecec;
+      overflow: hidden;
+    }
+
+    .header__nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: column;
+    }
+
+    .header__nav-item {
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    .header__nav-link {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .header__banner-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add some padding for mobile devices */
+}
+
+.header__banner-img {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+@media (min-width: 600px) {
+  .header__banner-img-box {
+    padding: 20px; /* Adjust padding for larger screens */
+  }
+
+  .header__banner-img {
+    max-width: 80%; /* Adjust the image size for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__banner-img-box {
+    padding: 30px; /* Further adjust padding for even larger screens */
+  }
+
+  .header__banner-img {
+    max-width: 70%; /* Further adjust the image size for larger screens */
+  }
+}
 
 
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-  
-      .header__nav {
-        background-color: #f1ecec;
-        overflow: hidden;
-      }
-  
+
+
+    .header__nav-link:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header__nav-link--active {
+      background-color: #69c2f6;
+    }
+
+    .menu-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+    }
+
+    .menu-toggle span {
+      font-size: 18px;
+    }
+
+    .header__btn-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+    }
+
+    @media (min-width: 600px) {
       .header__nav-list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+        flex-direction: row;
         display: flex;
-        flex-direction: column;
+      }
+
+      .menu-toggle {
         display: none;
       }
-  
-      .header__nav-item {
-        text-align: center;
-        padding: 14px 16px;
-      }
-  
-      .header__nav-link {
-        text-decoration: none;
-        color: white;
-        display: block;
-      }
-  
-      .header__nav-link:hover {
-        background-color: #ddd;
-        color: black;
-      }
-  
-      .header__nav-link--active {
-        background-color: #69c2f6;
-      }
-  
-      .menu-toggle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 14px 16px;
-        cursor: pointer;
-        background-color: #333;
-        color: white;
-      }
-  
-      .menu-toggle span {
-        font-size: 18px;
-      }
-  
-      @media (min-width: 600px) {
-        .header__nav-list {
-          flex-direction: row;
-          display: flex;
-        }
-  
-        .menu-toggle {
-          display: none;
-        }
-      }
-    </style>
 
-    <!-- Development CSS -->
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+      .header__btn-box {
+        margin-left: auto;
+      }
+    }
 
-    <!-- Deployable CSS -->
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__menu-bar">
-        <div class="header__logo-box">
-            <href="img/CHC-websitelogo-new.jpg">
-        </div>
+    .btn {
+      text-decoration: none;
+      color: #333;
+      background-color: #fff;
+      padding: 10px 20px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
 
-        <nav class="header__nav">
-    <div class="menu-toggle">
-      <span>&#9776; Menu</span>
-    </div>
-    <ul class="header__nav-list">
-      <li class="header__nav-item">
-        <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="aboutus.html" class="header__nav-link">About Us</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="services.html" class="header__nav-link">Services</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="project.html" class="header__nav-link">Projects</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="gallery.html" class="header__nav-link">Gallery</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="contactus.html" class="header__nav-link">Contact Us</a>
-      </li>
-    </ul>
-  </nav>
+    .btn:hover {
+      background-color: #ddd;
+    }
 
-        <div class="header__btn-box">
-          <a href="requestestimate2.html" class="btn btn--white">Request An Estimate</a>
-         
-        </div>
+    /* Base styles for the Contact Us section */
+.contact-us {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-us__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-us__left,
+.contact-us__right {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 768px) {
+  .contact-us__container {
+    flex-wrap: nowrap;
+  }
+
+  .contact-us__left,
+  .contact-us__right {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+
+  .contact-us__img-box iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Adjust form styles */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form__col--1,
+.form__col--2 {
+  flex: 1 1 100%;
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 768px) {
+  .form__col--1 {
+    flex: 1 1 48%;
+  }
+
+  .form__col--2 {
+    flex: 1 1 100%;
+  }
+}
+
+/* Additional styling for better spacing and alignment */
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-mid {
+  margin-bottom: 2rem;
+}
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .header__logo-box {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to top */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer {
+  text-align: center; /* Centers the content horizontally */
+  padding: 20px;
+}
+
+.footer__social-icons-box {
+  margin-top: 10px; /* Adjust spacing between sections */
+}
+
+.footer__social-link {
+  display: inline-block; /* Ensures each social icon is on the same line */
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  fill: #333; /* Adjust icon color */
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footer__social-icons-box {
+    margin-top: 20px; /* Increase spacing between sections on mobile */
+  }
+}
+
+
+
+
+
+  </style>
+
+  <!-- Development CSS -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+  <!-- Deployable CSS -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__menu-bar">
+      <div class="header__logo-box">
+        <img src="img/CHC-websitelogo-small.jpg" alt="CHC Logo">
       </div>
-      
+
+      <nav class="header__nav">
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span>&#9776; Menu</span>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="aboutus.html" class="header__nav-link">About Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="services.html" class="header__nav-link">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="project.html" class="header__nav-link">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="gallery.html" class="header__nav-link">Gallery</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="contactus.html" class="header__nav-link">Contact Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="requestestimate2.html" class="btn">Request An Estimate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
         
       <section class="what-we-offer">
         <div class="heading__fix u-center-text">
