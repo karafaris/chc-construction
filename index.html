@@ -211,6 +211,10 @@
     display: block;
     margin: 0 auto;
   }
+
+.footer {
+  text-align: center; /* Centers the content horizontally */
+  padding: 20px;
 }
 
 .footer__social-icons-box {
@@ -227,6 +231,7 @@
   height: 30px;
   fill: #333; /* Adjust icon color */
 }
+
 
 
   </style>
@@ -647,9 +652,10 @@
         </div>
   
         
-        <div class="footer__row-2 u-margin-top-small">
-          <p class="copyright">&copy; 2024 CHC Construction</p>
-    
+        <footer class="footer">
+          <div class="footer__copyright">
+            &copy; 2024 CHC Construction. All rights reserved.
+          </div>
           <div class="footer__social-icons-box">
             <a href="#" class="footer__social-link">
               <svg class="social-icon">
@@ -667,8 +673,8 @@
               </svg>
             </a>
           </div>
-        </div>
-      </footer>
+        </footer>
+        
     </body>
     <script>
       function toggleMenu() {
