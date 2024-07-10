@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,8 +9,6 @@
       margin: 0;
       padding: 0;
     }
-
-    
 
     .header__nav {
       background-color: #f1ecec;
@@ -36,39 +35,36 @@
     }
 
     .header__banner-img-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; /* Add some padding for mobile devices */
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Add some padding for mobile devices */
+    }
 
-.header__banner-img {
-  max-width: 100%; /* Ensure the image doesn't overflow */
-  height: auto; /* Maintain the aspect ratio */
-}
+    .header__banner-img {
+      max-width: 100%; /* Ensure the image doesn't overflow */
+      height: auto; /* Maintain the aspect ratio */
+    }
 
-@media (min-width: 600px) {
-  .header__banner-img-box {
-    padding: 20px; /* Adjust padding for larger screens */
-  }
+    @media (min-width: 600px) {
+      .header__banner-img-box {
+        padding: 20px; /* Adjust padding for larger screens */
+      }
 
-  .header__banner-img {
-    max-width: 80%; /* Adjust the image size for larger screens */
-  }
-}
+      .header__banner-img {
+        max-width: 80%; /* Adjust the image size for larger screens */
+      }
+    }
 
-@media (min-width: 1024px) {
-  .header__banner-img-box {
-    padding: 30px; /* Further adjust padding for even larger screens */
-  }
+    @media (min-width: 1024px) {
+      .header__banner-img-box {
+        padding: 30px; /* Further adjust padding for even larger screens */
+      }
 
-  .header__banner-img {
-    max-width: 70%; /* Further adjust the image size for larger screens */
-  }
-}
-
-
-
+      .header__banner-img {
+        max-width: 70%; /* Further adjust the image size for larger screens */
+      }
+    }
 
     .header__nav-link:hover {
       background-color: #ddd;
@@ -130,120 +126,182 @@
     }
 
     /* Base styles for the Contact Us section */
-.contact-us {
-  padding: 2rem;
-  background-color: #f9f9f9;
-}
+    .contact-us {
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
 
-.contact-us__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
+    .contact-us__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
 
-.contact-us__left,
-.contact-us__right {
-  flex: 1 1 100%;
-  max-width: 100%;
-}
+    .contact-us__left,
+    .contact-us__right {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
 
-/* Adjust styles for larger screens */
-@media (min-width: 768px) {
-  .contact-us__container {
-    flex-wrap: nowrap;
-  }
+    /* Adjust styles for larger screens */
+    @media (min-width: 768px) {
+      .contact-us__container {
+        flex-wrap: nowrap;
+      }
 
-  .contact-us__left,
-  .contact-us__right {
-    flex: 1 1 50%;
-    max-width: 50%;
-  }
+      .contact-us__left,
+      .contact-us__right {
+        flex: 1 1 50%;
+        max-width: 50%;
+      }
 
-  .contact-us__img-box iframe {
-    width: 100%;
-    height: auto;
-  }
-}
+      .contact-us__img-box iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
 
-/* Adjust form styles */
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+    /* Adjust form styles */
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-.form__col--1,
-.form__col--2 {
-  flex: 1 1 100%;
-}
+    .form__col--1,
+    .form__col--2 {
+      flex: 1 1 100%;
+    }
 
-/* Adjust styles for larger screens */
-@media (min-width: 768px) {
-  .form__col--1 {
-    flex: 1 1 48%;
-  }
+    /* Adjust styles for larger screens */
+    @media (min-width: 768px) {
+      .form__col--1 {
+        flex: 1 1 48%;
+      }
 
-  .form__col--2 {
-    flex: 1 1 100%;
-  }
-}
+      .form__col--2 {
+        flex: 1 1 100%;
+      }
+    }
 
-/* Additional styling for better spacing and alignment */
-.u-margin-bottom-small {
-  margin-bottom: 1rem;
-}
+    /* Additional styling for better spacing and alignment */
+    .u-margin-bottom-small {
+      margin-bottom: 1rem;
+    }
 
-.u-margin-bottom-mid {
-  margin-bottom: 2rem;
-}
+    .u-margin-bottom-mid {
+      margin-bottom: 2rem;
+    }
 
+    /* Mobile styles */
+    @media (max-width: 767px) {
+      .header__logo-box {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: flex-start; /* Align to top */
+        height: auto; /* Adjust height as needed */
+      }
+      
+      .header__logo {
+        display: block;
+        margin: 0 auto;
+      }
 
-/* Mobile styles */
-@media (max-width: 767px) {
-  .header__logo-box {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align to top */
-    height: auto; /* Adjust height as needed */
-  }
-  
-  .header__logo {
-    display: block;
-    margin: 0 auto;
-  }
+      .footer {
+        text-align: center; /* Centers the content horizontally */
+        padding: 20px;
+      }
 
-  .footer {
-  text-align: center; /* Centers the content horizontally */
-  padding: 20px;
-}
+      .footer__social-icons-box {
+        margin-top: 10px; /* Adjust spacing between sections */
+      }
 
-.footer__social-icons-box {
-  margin-top: 10px; /* Adjust spacing between sections */
-}
+      .footer__social-link {
+        display: inline-block; /* Ensures each social icon is on the same line */
+        margin: 0 10px; /* Adjust spacing between icons */
+      }
 
-.footer__social-link {
-  display: inline-block; /* Ensures each social icon is on the same line */
-  margin: 0 10px; /* Adjust spacing between icons */
-}
+      .social-icon {
+        width: 30px; /* Adjust icon size as needed */
+        height: 30px;
+        fill: #333; /* Adjust icon color */
+      }
 
-.social-icon {
-  width: 30px; /* Adjust icon size as needed */
-  height: 30px;
-  fill: #333; /* Adjust icon color */
-}
+      .footer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+      }
+      
+      .footer__social-icons-box {
+        margin-top: 20px; /* Increase spacing between sections on mobile */
+      }
+    }
 
-@media (max-width: 767px) {
-  .footer {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-  }
-  
-  .footer__social-icons-box {
-    margin-top: 20px; /* Increase spacing between sections on mobile */
-  }
-}
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .zoomed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .zoomed img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .zoomed.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .zoomed .exit {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    main {
+      margin-bottom: 50px; /* Add space between main and footer */
+    }
+
+    main h1 {
+      text-align: center; /* Center align the Gallery heading */
+    }
+    
   </style>
 
   <!-- Development CSS -->
@@ -290,108 +348,117 @@
     </div>
   </header>
 
-    <main>
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <img src="img/before-after-chc-construction-house1-bathroom.jpg
-            " alt="Sample Image 1">
-            <img src="img/before-after-chc-construction-house1-kitchen.jpg
-            " alt="Sample Image 2">
-            <img src="img/before-after-chc-construction-house1-masterbathroom.jpg
-            " alt="Sample Image 3">
-            <img src="img/chc-construction-75thstreet-diningroom.jpg
-            " alt="Sample Image 4">
-            <img src="img/chc-construction-75thstreet-entryway.jpg
-            " alt="Sample Image 5">
-            <img src="img/chc-construction-bathroom-norton.jpg
-            " alt="Sample Image 6">
-            <img src="img/chc-construction-entryway-denver.jpg
-            " alt="Sample Image 7">
-            <img src="img/chc-construction-entryway-fairwood.jpg
-            " alt="Sample Image 8">
-            <img src="img/chc-construction-kitchen-cabinets.jpg
-            " alt="Sample Image 9">
-            <img src="img/chc-construction-kitchen-norton.jpg
-            " alt="Sample Image 10">
-            <img src="img/chc-construction-livingroom.jpg " alt="Sample Image 11">
-        </div>
-    </main>
+  <main>
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <img src="img/before-after-chc-construction-house1-bathroom.jpg" alt="Sample Image 1">
+      <img src="img/before-after-chc-construction-house1-kitchen.jpg" alt="Sample Image 2">
+      <img src="img/before-after-chc-construction-house1-masterbathroom.jpg" alt="Sample Image 3">
+      <img src="img/chc-construction-75thstreet-diningroom.jpg" alt="Sample Image 4">
+      <img src="img/chc-construction-75thstreet-entryway.jpg" alt="Sample Image 5">
+      <img src="img/chc-construction-bathroom-norton.jpg" alt="Sample Image 6">
+      <img src="img/chc-construction-entryway-denver.jpg" alt="Sample Image 7">
+      <img src="img/chc-construction-entryway-fairwood.jpg" alt="Sample Image 8">
+      <img src="img/chc-construction-kitchen-cabinets.jpg" alt="Sample Image 9">
+      <img src="img/chc-construction-kitchen-norton.jpg" alt="Sample Image 10">
+      <img src="img/chc-construction-livingroom.jpg" alt="Sample Image 11">
+    </div>
+    <div class="zoomed" id="zoomed">
+      <button class="exit" onclick="closeZoom()">X</button>
+      <img src="" alt="Zoomed Image">
+    </div>
+  </main>
 
-    <footer class="footer">
-      <div class="footer__row-1">
-        <div class="footer__box">
-          <h4 class="footer__title">Company Information</h4>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="index.html" class="footer__link">Home</a>
-            </li>
-            <li class="footer__item">
-              <a href="aboutus.html" class="footer__link">About Us</a>
-            </li>
-            <li class="#footer__item">
-              <a href="services.html" class="footer__link">Services</a>
-            </li>
-            <li class="footer__item">
-              <a href="project.html" class="footer__link">Projects</a>
-            </li>
-            <li class="footer__item">
-              <a href="gallery.html" class="footer__link">Gallery</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="footer__box">
-          <h4 class="footer__title">Support</h4>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="contactus.html" class="footer__link">Contact Us</a>
-            </li>
-            <li class="footer__item">
-              <a href="timemanagement.html" class="footer__link">Time Management</a>
-            </li>
-            <li class="#footer__item">
-              <a href="privacypolicy.html" class="footer__link">Privacy Policy</a>
-            </li>
-            <li class="footer__item">
-              <a href="termsandconditions.html" class="footer__link">Terms of Operation</a>
-            </li>
-          </ul>
-        </div>
-  
-        
+  <footer class="footer">
+    <div class="footer__row-1">
+      <div class="footer__box">
+        <h4 class="footer__title">Company Information</h4>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">Home</a>
+          </li>
+          <li class="footer__item">
+            <a href="aboutus.html" class="footer__link">About Us</a>
+          </li>
+          <li class="footer__item">
+            <a href="services.html" class="footer__link">Services</a>
+          </li>
+          <li class="footer__item">
+            <a href="project.html" class="footer__link">Projects</a>
+          </li>
+          <li class="footer__item">
+            <a href="gallery.html" class="footer__link">Gallery</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__box">
+        <h4 class="footer__title">Support</h4>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="contactus.html" class="footer__link">Contact Us</a>
+          </li>
+          <li class="footer__item">
+            <a href="timemanagement.html" class="footer__link">Time Management</a>
+          </li>
+          <li class="footer__item">
+            <a href="privacypolicy.html" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="termsandconditions.html" class="footer__link">Terms of Operation</a>
+          </li>
+        </ul>
+      </div>
+
+      
 <footer class="footer">
-  <div class="footer__copyright">
-    &copy; 2024 CHC Construction. All rights reserved.
-  </div>
-  <div class="footer__social-icons-box">
-    <a href="https://www.facebook.com/profile.php?id=61561596974720" class="footer__social-link">
-      <svg class="social-icon">
-        <use xlink:href="img/sprite.svg#facebook"></use>
-      </svg>
-    </a>
-    <a href="https://www.instagram.com/CHCconstructionLLC/" class="footer__social-link">
-      <svg class="social-icon">
-        <use xlink:href="img/sprite.svg#instagram"></use>
-      </svg>
-    </a>
-    <a href="https://x.com/CHC_KC" class="footer__social-link">
-      <svg class="social-icon">
-        <use xlink:href="img/sprite.svg#twitter"></use>
-      </svg>
-    </a>
-  </div>
+<div class="footer__copyright">
+  &copy; 2024 CHC Construction. All rights reserved.
+</div>
+<div class="footer__social-icons-box">
+  <a href="https://www.facebook.com/profile.php?id=61561596974720" class="footer__social-link">
+    <svg class="social-icon">
+      <use xlink:href="img/sprite.svg#facebook"></use>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/CHCconstructionLLC/" class="footer__social-link">
+    <svg class="social-icon">
+      <use xlink:href="img/sprite.svg#instagram"></use>
+    </svg>
+  </a>
+  <a href="https://x.com/CHC_KC" class="footer__social-link">
+    <svg class="social-icon">
+      <use xlink:href="img/sprite.svg#twitter"></use>
+    </svg>
+  </a>
+</div>
 </footer>
 
-        
-    </body>
-    <script>
-      function toggleMenu() {
-        var navList = document.querySelector('.header__nav-list');
-        if (navList.style.display === "flex") {
-          navList.style.display = "none";
-        } else {
-          navList.style.display = "flex";
-        }
+
+  <script>
+    function toggleMenu() {
+      var navList = document.querySelector('.header__nav-list');
+      if (navList.style.display === "flex") {
+        navList.style.display = "none";
+      } else {
+        navList.style.display = "flex";
       }
-    </script>
-  </html>
+    }
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', function() {
+        var zoomed = document.getElementById('zoomed');
+        var zoomedImg = zoomed.querySelector('img');
+        zoomedImg.src = this.src;
+        zoomed.classList.add('visible');
+      });
+    });
+
+    function closeZoom() {
+      var zoomed = document.getElementById('zoomed');
+      zoomed.classList.remove('visible');
+      zoomed.querySelector('img').src = '';
+    }
+  </script>
+</body>
+</html>
