@@ -246,6 +246,15 @@
       justify-content: center;
     }
 
+    .gallery__item {
+      text-align: center;
+    }
+
+    .gallery__title {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
     .gallery img {
       width: 200px;
       height: 150px;
@@ -351,13 +360,34 @@
   <main>
     <h1>Current Projects</h1>
     <div class="gallery">
-      <img src="img/428  N Oakley Ave KCMO, MO 64123.jpg" alt="Sample Image 1">
-      <img src="img/414 N Denver Ave KCMO, MO 64123.jpg" alt="Sample Image 2">
-      <img src="img/821 NE Cedar St Lee's Summit, MO 64086.jpg" alt="Sample Image 3">
-      <img src="img/1028 W Fairwood Ln Olathe, KS 66061.jpg" alt="Sample Image 4">
-      <img src="img/5433 Norton Ave KCMO, MO 64130.jpg" alt="Sample Image 5">
-      <img src="img/7912 Sterling Ave Raytown, MO 64138.jpg" alt="Sample Image 6">
-      <img src="img/8234 Madison ave KCMO, MO 64114.jpg" alt="Sample Image 7">
+      <div class="gallery__item">
+        <div class="gallery__title">428 N Oakley Ave KCMO, MO 64123</div>
+        <img src="img/428  N Oakley Ave KCMO, MO 64123.jpg" alt="428 N Oakley Ave KCMO, MO 64123">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">414 N Denver Ave KCMO, MO 64123</div>
+        <img src="img/414 N Denver Ave KCMO, MO 64123.jpg" alt="414 N Denver Ave KCMO, MO 64123">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">821 NE Cedar St Lee's Summit, MO 64086</div>
+        <img src="img/821 NE Cedar St Lee's Summit, MO 64086.jpg" alt="821 NE Cedar St Lee's Summit, MO 64086.jpg">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">1028 W Fairwood Ln Olathe, KS 66061</div>
+        <img src="img/1028 W Fairwood Ln Olathe, KS 66061.jpg" alt="1028 W Fairwood Ln Olathe, KS 66061.jpg">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">5433 Norton Ave KCMO, MO 64130</div>
+        <img src="img/5433 Norton Ave KCMO, MO 64130.jpg" alt="5433 Norton Ave KCMO, MO 64130.jpg">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">7912 Sterling Ave Raytown, MO 64138</div>
+        <img src="img/7912 Sterling Ave Raytown, MO 64138.jpg" alt="7912 Sterling Ave Raytown, MO 64138.jpg">
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__title">8234 Madison Ave KCMO, MO 64114</div>
+        <img src="img/8234 Madison Ave KCMO, MO 64114.jpg" alt="8234 Madison Ave KCMO, MO 64114.jpg">
+      </div>
     </div>
     <div class="zoomed" id="zoomed">
       <button class="exit" onclick="closeZoom()">X</button>
