@@ -1,21 +1,20 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $message = htmlspecialchars($_POST['message']);
-    
-    $to = "xya@gmail.com";
-    $subject = "New Construction Estimate Request";
-    $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+    $name = $_POST['name'];
+    $email = $_POST['contact-email'];
+    $message = $_POST['message'];
+
+    $to = "karafaris@icloud.com";
+    $subject = "New Contact Us Message";
+    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+
     $headers = "From: $email";
-    
+
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your request. We will get back to you shortly.";
+        echo "Message sent successfully.";
     } else {
-        echo "There was an error sending your request. Please try again later.";
+        echo "Failed to send message.";
     }
-} else {
-    echo "Invalid request method.";
 }
 ?>
+
