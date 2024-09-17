@@ -1,4 +1,33 @@
-.zoomed {
+/* Add basic styling for the gallery and modal */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .gallery__item {
+    width: 250px;
+    display: inline-block;
+  }
+  
+  .gallery__title {
+    margin-bottom: 10px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .clickable:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Modal for zoomed images */
+  .zoomed {
     display: none;
     position: fixed;
     top: 0;
@@ -9,6 +38,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    flex-direction: column;
   }
   
   .zoomed img {

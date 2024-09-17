@@ -1,3 +1,4 @@
+// Array of gallery data with all image sources
 const galleryData = [
     [
       'img/414 N Denver Ave KCMO, MO 64123.jpg',
@@ -13,6 +14,10 @@ const galleryData = [
     ],
     [
       'img/5433 Norton Ave KCMO, MO 64130.jpg',
+      'img/norton-before-and-afters.jpg'
+    ],
+    [
+      'img/Madison-Ave-before-outside-picture.jpg',
       'img/norton-before-and-afters.jpg'
     ]
   ];
