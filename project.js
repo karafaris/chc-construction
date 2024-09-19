@@ -2,11 +2,19 @@
 const galleryData = [
     [
       'img/414 N Denver Ave KCMO, MO 64123.jpg',
-      'img/denver-before-and-after.jpg'
+      'img/denver-entry-way-before.jpeg',
+      'img/denver-entry-way-after.jpeg',
+      'img/denver-kitchen-before.jpeg',
+      'img/denver-kitchen-after.jpeg',
+      'img/denver-basement-before.jpeg',
+      'img/denver-basement-after.jpeg',
     ],
     [
       'img/821 NE Cedar St Lee\'s Summit, MO 64086.jpg',
-      'img/cedar-after-photo.jpg'
+      'img/cedar-kitchen-before.jpeg',
+      'img/cedar-kithen-after.jpeg',
+      'img/cedar-dining-room-before.jpeg',
+      'img/cedar-diningroom-after.jpg'
     ],
     [
       'img/1028 W Fairwood Ln Olathe, KS 66061.jpg',
